@@ -9,7 +9,7 @@ Tunnel-Hunter is a simple basic tool written in bash that can be used as a stand
 Setting Up:
 1. You will need to add your host into the host variable in Tunnel-Hunter.sh.
 
-2. Current ports that it will try: 22, 21, 25, 53, 80, 110, 143, 443, 465, 587, 993, 995, 3128, 3389, 5060, 5500, 8443, 1494, 8080. (If you edit these, make sure they match in each script. :/
+2. Current ports that it will try: 22, 21, 25, 53, 80, 110, 143, 443, 465, 587, 993, 995, 3128, 3389, 5060, 5500, 8443, 1494, 8080. (If you edit these, make sure they match in each script. ;)
 
 3. SSH can listen on multiple ports so adjust your sshd_config accordingly.
 
