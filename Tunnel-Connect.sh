@@ -11,7 +11,7 @@ echo "Written by Shane Rudy aka @H011YxW00D aka BlueSp4ce"
 echo "ara1212@gmail.com"
 echo ""
 findTunnel() {
-for i in $( echo -e "22\n21\n25\n53\n80\n110\n143\n443\n465\n587\n993\n995\n3128\n3389\n5060\n5500\n8443\n1494\n8080\n" ); 
+for i in $( echo -e "21\n22\n23\n20\n25\n53\n80\n110\n143\n443\n465\n587\n993\n995\n3128\n3389\n5060\n5500\n8443\n1494\n8080\n" ); 
   do
     /usr/bin/ssh -o ConnectTimeout=5 root@localhost -p 5$i
   done
