@@ -17,5 +17,7 @@ Setting Up:
 
 */1 * * * * ~/create_ssh_tunnel.sh > tunnel.log 2>&1
 
-5. Make sure you have created an SSH key and this setup properly.
+5. Make sure you have created an SSH keys and this is setup properly. This tool uses ssh key based authentication to establish a tunnel so this needs to be setup before it will work.
+
+6. See the Wiki for a complete walkthrough.
 
