@@ -7,7 +7,7 @@ echo " / / / /_/ / / / / / / /  __/ /_____/ /___/ /_/ / / / / / / /  __/ /__/ /_
 echo "/_/  \__,_/_/ /_/_/ /_/\___/_/      \____/\____/_/ /_/_/ /_/\___/\___/\__/ "
 echo""
 echo "Description: Searches for SSH Tunnels established by Tunnel-Hunter."
-echo "Written by Shane Rudy aka @Ho11yxW00D aka BlueSp4ce"
+echo "Written by Shane Rudy aka @H011YxW00D aka BlueSp4ce"
 echo "ara1212@gmail.com"
 echo ""
 findTunnel() {
