@@ -15,7 +15,7 @@ Setting Up:
 
 4. For Red Teams setting up a cron job to run Tunnel-Hunter.sh every minute to make sure the tunnel is up is ideal. To do this do the following: sudo crontab -e (select your editor if prompted) and enter the following: 
 
-*/1 * * * * ~/create_ssh_tunnel.sh > tunnel.log 2>&1
+*/1 * * * * ~/opt/Tunnel-Hunter/Tunnel-Hunter.sh > tunnel.log 2>&1
 
 5. Make sure you have created an SSH keys and this is setup properly. This tool uses ssh key based authentication to establish a tunnel so this needs to be setup before it will work.
 
