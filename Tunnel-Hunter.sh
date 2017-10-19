@@ -11,10 +11,16 @@ echo "Written by Shane Rudy aka @H011YxW00D aka BlueSp4ce"
 echo "ara1212@gmail.com"
 echo ""
 createTunnel() {
-host="IP or Host Goes Here"
+
+echo "+-+-+-+-+-+-+-+ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+-+"
+echo "|H|u|n|t|i|n|g| |F|o|r| |A| |T|u|n|n|e|l|.|.|.|"
+echo "+-+-+-+-+-+-+-+ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+-+"
+echo ""
+
+host="74.208.182.71"
 for i in $( echo -e "21\n22\n23\n20\n25\n53\n80\n110\n143\n443\n465\n587\n993\n995\n3128\n3389\n5060\n5500\n8443\n1494\n8080\n" ); 
   do
-    /usr/bin/ssh -o ConnectTimeout=5 -N -R 5$i:localhost:22 root@$host -p$i
+    /usr/bin/ssh -o ConnectTimeout=10 -N -R 5$i:localhost:22 root@$host -p$i
   done
   if [[ $? -eq 0 ]]; then
     echo Tunnel success on port $i
@@ -22,11 +28,11 @@ for i in $( echo -e "21\n22\n23\n20\n25\n53\n80\n110\n143\n443\n465\n587\n993\n9
     echo An error occurred creating a tunnel to jumpbox on port $i. RC was $?  
 fi
 }
-/bin/pidof ssh
-if [[ $? -ne 0 ]]; then
- echo "+-+-+-+-+-+-+-+ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+-+"
- echo "|H|u|n|t|i|n|g| |F|o|r| |A| |T|u|n|n|e|l|.|.|.|"
- echo "+-+-+-+-+-+-+-+ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+-+"
- echo ""
+
+tunnels=$(ps waux  | grep ssh | grep -i ConnectTimeout  |  awk '{print $2}' | wc -l)
+if [[ $tunnels -gt 1 ]]; then
+echo Tunnel established already. Exiting.
+        exit 1
+else
  createTunnel
 fi
