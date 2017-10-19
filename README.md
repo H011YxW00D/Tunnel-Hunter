@@ -17,7 +17,7 @@ Setting Up:
 
 */1 * * * * ~/opt/Tunnel-Hunter/Tunnel-Hunter.sh > tunnel.log 2>&1
 
-5. Make sure you have created an SSH keys and this is setup properly. This tool uses ssh key based authentication to establish a tunnel so this needs to be setup before it will work.
+5. Make sure you have created SSH keys and this is setup properly. This tool uses ssh key based authentication to establish a tunnel so this needs to be setup before it will work.
 
 6. See the Wiki for a complete walkthrough. https://github.com/H011YxW00D/Tunnel-Hunter/wiki/Setup-and-Basic-Usage
 
