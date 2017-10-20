@@ -1,7 +1,5 @@
 #!/bin/bash
 
-createTunnel() {
-
 echo ""
 echo "  ______                       __      __  __            __"           
 echo " /_  __/_  ______  ____  ___  / /     / / / /_  ______  / /____  _____"
@@ -13,6 +11,8 @@ echo "Description: Searches egress of common ports and establishes a SSH tunnel.
 echo "Written by Shane Rudy aka @H011YxW00D aka BlueSp4ce"
 echo "ara1212@gmail.com"
 echo ""
+
+createTunnel() {
 
 echo "+-+-+-+-+-+-+-+ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+-+"
 echo "|H|u|n|t|i|n|g| |F|o|r| |A| |T|u|n|n|e|l|.|.|.|"
