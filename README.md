@@ -2,7 +2,7 @@
 
 Tunnel-Hunter is a simple quick and dirty ssh tunnel tool written in bash that can be used as a standalone tool or be used in Red Team engagements on devices such as Pi's that are dropped to gain an internal foothold. There are two scripts:
 
-1. Tunnel-Hunter.sh - The script that sits system that will be connecting back to you (Pi). It searches common ports that are allowed outbound e.g 80, 443, 53, 22 etc. until it finds one. Once it finds one it will use it to establish the tunnel.
+1. Tunnel-Hunter.sh - The script that sits system that will be connecting back to you (Pi). It searches common ports that are allowed outbound e.g 80, 443, 53, 22 etc. until it finds usable ports. Once it finds ports it will use them to establish 2 tunnels. One tunnel is always used for backup in case something happens. Once Tunnel-Hunter detects that 2 tunnels have been created it will exit. Ideally on a red team you would want this script to run every minute via cron.
 
 2. Tunnel-Connect.sh - Ran on your C2 server used to connect you to the tunnel and back to the device. 
 
